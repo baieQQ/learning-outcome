@@ -1,0 +1,150 @@
+.header{
+    font-size:16px;
+    letter-spacing:2px; 
+    text-decoration:none; /* 底線 underline：文字下的底線 overline：文字上的線 line-through：穿過文字的線，可以看做是刪除線。*/ 
+    color:#8e8e9c;
+}
+
+.container{
+    display : flex;
+    position: relative;
+    flex-wrap : nowrap; /*不換行*/
+    flex-direction : row; /*橫向排列*/
+    justify-content : center; /*橫向對齊*/
+    align-items : center; /*垂直對齊*/
+}
+
+.head_item{
+    margin:10px;
+    padding:0px;
+}
+
+.center{
+    position: relative;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#owo{
+    background-color: wheat;
+    float:right;
+    position: relative;
+    right: 7%;
+    width:20%; 
+    height:250px;
+    margin-top: 15px;
+    border: 1px black solid;
+}
+
+#owo p{
+    color:black;
+    font-size: 150px;
+    font-family : "標楷體";
+    font-weight : bold;
+}
+
+#owo .image_2{
+    width:100%;
+    height:100%;
+    display: none;
+}
+
+#keyboard{
+    height: 300px;
+    width: 60%;
+    border: 5px solid black;
+    background-color: wheat;
+    position: relative;
+    margin: auto; /*水平置中*/
+
+    right: 10%;
+}
+
+.keyboard_container{
+    position: relative;
+    /*border: 5px black solid;*/
+    width: 95%;
+    height: 18%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.keyboard_item{
+    position: relative;
+    background-color: white;
+    height: 80%;
+    margin:10px;
+    padding:0px;
+}
+
+.keyboard_item span{ /* 可換為 .keyboard_item p*/
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%); /* 往左移 50% 往上移 50%*/
+    color:salmon;
+    font-size: 24px;
+    font-family : "標楷體";
+    font-weight : bold;
+}
+
+
+#start_game{
+    position: relative;
+    border: 3px black outset;
+    background-color: #97CBFF;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    margin: 20px auto;
+    transition-property:all;
+    transition-duration:0.25s;
+    transition-timing-function:ease;
+}
+
+#start_game:hover{
+    background-color: #2894ff;  
+}
+
+#start_game p{
+    color: black;
+    line-height: 40px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+#game_reciprocal{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 往左移 50% 往上移 50%*/
+    color: saddlebrown;
+    font-size: 300px;
+    letter-spacing: 3px;
+    font-family : "arial";
+    font-weight : bold;
+    text-align: center;
+    position: fixed;
+    padding: auto;
+    margin: auto;
+}
+
+
+
+/*
+
+.menu_list{
+    position:relative;
+    padding: 2px;
+    width: 100px;
+    height:30px;
+    font-size:18px;
+    align-items: center;
+    border-left:1px black solid;
+    border-right:1px black solid;
+    border-bottom:1px black solid;
+}
+*/
