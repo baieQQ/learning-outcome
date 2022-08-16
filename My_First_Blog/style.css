@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none; /* 去除清單前的圈圈 */
+    font-family: 'Noto Sans TC', sans-serif; /* google 字體 */
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: 
+        linear-gradient(115deg, wheat 50%,   /* linear-gradient(角度, 起始色彩 起始色彩所占比例, 結束色彩 結束色彩位置); */
+            transparent 50%) center center / 100% 
+            100%,
+            url("image/2.png") right center / auto 100%; /* (置右 置中 / 寬度自動 高度 100%) */
+}
+
+.container{
+    height: 100%;
+    width: 95%;
+    margin: auto; /* 交錯軸居中 */
+}
+
+.banner-txt{
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* 主軸切為垂直 */
+    justify-content: center; /* 置中排列 */
+    align-items: flex-start; /* 對齊交錯軸最前端 */
+}
+
+.banner-txt h1{
+    font-size: 80px;
+    border-bottom: 1px solid slategrey;
+    font-weight: 900;
+}
+
+.banner-txt h1 small{
+    display: block; /* 換行 */
+    font-style: italic;
+    font-size: 23px;
+    opacity: 0.5;
+    font-weight: 700;
+    margin-top: 0.3em;
+}
+
+.banner-txt h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.banner-txt p{
+    font-size: 30px;
+    font-weight: 300;
+}
