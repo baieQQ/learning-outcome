@@ -1,3 +1,6 @@
+@import 
+url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
 *{
     padding: 0;
     margin: 0;
@@ -5,17 +8,100 @@
     font-family: 'Noto Sans TC', sans-serif; /* google 字體 */
 }
 
-.banner{
+.main-header{
+    position: fixed;
     width: 100%;
-    height: 100vh;
-    background: 
-        linear-gradient(115deg, wheat 50%,   /* linear-gradient(角度, 起始色彩 起始色彩所占比例, 結束色彩 結束色彩位置); */
-            transparent 50%) center center / 100% 
-            100%,
-            url("image/2.png") right center / auto 100%; /* (置右 置中 / 寬度自動 高度 100%) */
+    background: linear-gradient(to right, #623AA2 0%, #F97794 100%); /* 漸層色 */
+    z-index: 9999;
 }
 
-.container{
+.nav-transparent{
+    background: transparent !important;
+    box-shadow: none;
+}
+
+.main-header .container{
+    display: flex;
+    align-items: center;  
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.main-header .logo{
+    width: 100px;
+}
+
+.main-header .logo img{
+    width: 100%;
+    vertical-align: middle; /* 圖片對齊 */
+}
+
+.main-header .main-nav{
+    margin: auto;
+}
+
+.main-header .main-nav i{
+    padding: 5px 5px;
+}
+
+.main-header .main-nav a{
+    text-decoration: none; /*底線*/
+    color: #fff;
+    padding: 5px 1em; /* 上下 左右*/
+    position: relative;
+}
+
+.main-header .main-nav a:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -5px;
+    height: 0;
+    border-bottom: 1px solid #fff;
+    transition: 0.3s;
+}
+
+.main-header .main-nav a:hover:after{
+    left: 0;
+    right: 0;
+}
+
+.main-header .header-search{
+    display: flex;
+}
+
+.main-header .header-search button,
+.main-header .header-search input{
+    border: none;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+.main-header .header-search button:focus,
+.main-header .header-search input:focus{
+    outline: none; /* 去除選取時的提示黑線 */
+}
+
+.main-header .header-search button{
+    border-radius: 0 100px 100px 0;
+}
+
+.main-header .header-search input{
+    border-radius: 100px 0 0 100px;
+}
+
+.banner{
+    width: 100%;
+    height: 200vh;
+    background: 
+        linear-gradient(115deg, #e57373 50%,   /* linear-gradient(角度, 起始色彩 起始色彩所占比例, 結束色彩 結束色彩位置); */
+        #ba68c8 50%) center center / 100%  100%
+}
+
+.banner .container{
     height: 100%;
     width: 95%;
     margin: auto; /* 交錯軸居中 */
