@@ -40,6 +40,7 @@ url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
 
 .main-header .main-nav{
     margin: auto;
+    display: flex;
 }
 
 .main-header .main-nav i{
@@ -51,6 +52,12 @@ url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
     color: #fff;
     padding: 5px 1em; /* 上下 左右*/
     position: relative;
+    transform: translateY(0px); /* 向上移動 */
+    transition: .3s; /* 過程秒數 */
+}
+
+.main-header .main-nav a:hover{
+    transform: translateY(-5px);
 }
 
 .main-header .main-nav a:after{
@@ -93,12 +100,18 @@ url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
     border-radius: 100px 0 0 100px;
 }
 
+body{
+    background-color: #E0E0E0;
+    height: 1500px;
+}
+
 .banner{
     width: 100%;
-    height: 200vh;
+    height: 100vh;
     background: 
-        linear-gradient(115deg, #e57373 50%,   /* linear-gradient(角度, 起始色彩 起始色彩所占比例, 結束色彩 結束色彩位置); */
-        #ba68c8 50%) center center / 100%  100%
+        linear-gradient(115deg, #F3B05A 50%,   /* linear-gradient(角度, 起始色彩 起始色彩所占比例, 結束色彩 結束色彩位置); */
+        transparent 50%) center center / 100%  100%,
+        url(image/ban.jpg) right center / auto 100%
 }
 
 .banner .container{
@@ -116,7 +129,7 @@ url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
 }
 
 .banner-txt h1{
-    font-size: 80px;
+    font-size: 50px;
     border-bottom: 1px solid slategrey;
     font-weight: 900;
 }
@@ -131,11 +144,71 @@ url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
 }
 
 .banner-txt h2{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
 }
 
 .banner-txt p{
     font-size: 30px;
     font-weight: 300;
+}
+
+.wrap{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.wrap .item{
+    width: 350px;
+    margin: 15px;
+    margin-bottom: auto;
+    transition: 0.3s;
+}
+
+.wrap .item:hover{
+    width: 380px;
+}
+
+.wrap .item img{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 50%;
+}
+
+.wrap .item .txt{
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    margin-top: -5px;
+    padding-top: 5px;
+}
+
+.wrap .item h2,
+.wrap .item h3,
+.wrap .item p{
+    padding: 3px 10px;
+    line-height: 1.6;
+}
+
+
+.wrap .item h2{
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.wrap .item h3{
+    border-bottom: 1px solid #888;
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size: 10px;
+}
+
+
+.wrap .item p{
+    padding-top: 5px;
+    word-break: break-all; /*文字自動換行 缺點是單字會被切半*/
 }
