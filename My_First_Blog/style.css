@@ -23,7 +23,7 @@ url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
 .main-header .container{
     display: flex;
     align-items: center;  
-    padding: 20px;
+    padding: 5px;
     max-width: 1200px;
     margin: auto;
 }
