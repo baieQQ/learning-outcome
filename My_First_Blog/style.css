@@ -101,6 +101,7 @@ url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
 }
 
 body{
+    position: relative;
     background-color: #E0E0E0;
     height: 1500px;
 }
@@ -161,6 +162,12 @@ body{
     margin: auto;
 }
 
+
+.wrap a{
+    text-decoration: none;
+    color: black;
+}
+
 .wrap .item{
     width: 330px;
     margin-bottom: auto;
@@ -178,6 +185,7 @@ body{
     height: 200px;
     border: black 1px solid;
 }
+
 
 .wrap .item .txt{
     border: black 1px solid;
