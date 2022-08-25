@@ -11,8 +11,30 @@ url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
 .main-header{
     position: fixed;
     width: 100%;
+    height: auto;
     background: linear-gradient(to right, #623AA2 0%, #F97794 100%); /* 漸層色 */
     z-index: 9999;
+}
+
+.main-header .container{
+    display: flex;
+    justify-content : space-between; /*橫向對齊*/
+    align-items : center; /*垂直對齊*/
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+    padding: 10px 20px;
+    position: relative;
+    top:0%;
+    left:50%;
+    transform: translate(-50%, 0%);
+}
+
+.main-header .container .container_nav{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    padding: 5px;
 }
 
 .nav-transparent{
@@ -20,23 +42,24 @@ url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
     box-shadow: none;
 }
 
-.main-header .container{
-    display: flex;
-    align-items: center;  
-    padding: 5px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-
 .main-header .logo{
-    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /*底線*/
+    font-family: 'DynaPuff', cursive;
+    justify-content: center; /* 置中排列 */
+    align-self: center;
+    width: auto;
+    font-size: 26px;
+    color:#fff
 }
 
 .main-header .logo img{
-    width: 100%;
+    width: 80px;
     vertical-align: middle; /* 圖片對齊 */
 }
+
 
 .main-header .main-nav{
     margin: auto;
@@ -93,17 +116,21 @@ url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
 }
 
 .main-header .header-search button{
-    border-radius: 0 100px 100px 0;
+    background-color: transparent;
+    border-radius: 100px 100px 100px 100px;
 }
 
 .main-header .header-search input{
-    border-radius: 100px 0 0 100px;
+    display: none;
+    width: 0;
 }
 
+
+
 body{
-    position: relative;
     background-color: #E0E0E0;
-    height: 1500px;
+    width: 100%;
+    height: 1300px;
 }
 
 .banner{
@@ -138,38 +165,28 @@ body{
 .banner-txt h1 small{
     display: block; /* 換行 */
     font-style: italic;
-    font-size: 23px;
+    font-size: 20px;
     opacity: 0.5;
     font-weight: 700;
     margin-top: 0.3em;
 }
 
-.banner-txt h2{
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.banner-txt p{
-    font-size: 30px;
-    font-weight: 300;
-}
 
 .wrap{
-    width: 1200px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
 }
 
-
 .wrap a{
-    text-decoration: none;
+    text-decoration: none; /*底線*/
     color: black;
 }
 
 .wrap .item{
-    width: 330px;
+    width: 25%;
     margin-bottom: auto;
     margin: 20px;
     transition: 0.3s;
@@ -185,7 +202,6 @@ body{
     height: 200px;
     border: black 1px solid;
 }
-
 
 .wrap .item .txt{
     border: black 1px solid;
@@ -221,4 +237,53 @@ body{
 .wrap .item p{
     padding-top: 5px;
     word-break: break-all; /*文字自動換行 缺點是單字會被切半*/
+}
+
+
+@media screen and (max-width:1023px) { 
+
+    .main-header .container .container_nav{
+        display: none;
+    }
+  
+    .main-header .logo{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .wrap .item{
+        width: 40%;
+    }   
+}
+
+@media screen and (max-width:550px) { 
+    .banner-txt{
+        height: 50%;
+    }
+
+    .banner-txt h1{
+        font-size: 20px;
+    }
+
+    .banner-txt h1 small{
+        font-size: 10px;
+    }
+    .main-header .container{
+        padding: 0;
+    }
+    .main-header .logo{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .main-header .logo{
+        height: 50px;
+        font-size: 20px ;
+    }
+
+    .wrap .item{
+        width: 75%;
+    }
 }

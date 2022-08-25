@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
         <title> baieQQ_Blog</title>
         <script src="https://kit.fontawesome.com/af6fc6874b.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet"> 
@@ -11,22 +12,24 @@
         <script src="jquery.js"></script>
     </head>
     <header class="main-header" id="headNav">
-        <nav class="container">
+        <div class="container">
             <a href="#" class="logo">
-                <img src="image/icon.jpg" alt="image" width="100%" height="100%">
+                <img src="image/icon.jpg" alt="image">
+                <span> baieQQ Blog</span> 
             </a>
-            <span style="font-family: 'DynaPuff', cursive; font-size: 30px; color:#fff"> baieQQ Blog</span> 
-            <div class="main-nav">
-                <a href="#"><i class="fa-solid fa-house"></i>Index</a>
-                <a href="#"><i class="fa-solid fa-tags"></i>Tags</a>
-                <a href="#"><i class="fa-solid fa-flag"></i>Categories</a>
-                <a href="#"><i class="fa-solid fa-box-archive"></i>Archives</a>
-                <a href="#"><i class="fa-solid fa-address-card"></i>About</a>
-            </div>
-            <form class="header-search">
-                <input type="search" name="" id=""/>
-                <button><i class="fa fa-search"></i></button>
-            </form>
+            <nav class="container_nav">
+                <div class="main-nav">
+                    <a href="#"><i class="fa-solid fa-house"></i>Index</a>
+                    <a href="#"><i class="fa-solid fa-tags"></i>Tags</a>
+                    <a href="#"><i class="fa-solid fa-flag"></i>Categories</a>
+                    <a href="#"><i class="fa-solid fa-box-archive"></i>Archives</a>
+                    <a href="#"><i class="fa-solid fa-address-card"></i>About</a>
+                </div>
+                <form class="header-search">
+                    <input type="search" name="" id=""/>
+                    <button><i class="fa fa-search" style="color:#fff; font-size: 18px"></i></button>
+                </form>
+            </nav>
         </div>
     </header>
     <body>
@@ -39,14 +42,11 @@
                             Since 2022/08/15
                         </small>
                     </h1>
-                    <h2>經歷</h2>
-                    <p>blablablablabla<br>
-                        owowowo</p>
                 </div>
             </div>
         </div>
         <section class="wrap">
-            <a href="../Children_lesson/keyboard_game/index.html" class="item">
+            <article class="item">
                 <img src ="https://picsum.photos/300/300?random=1">
                 <div class="txt"> 
                     <h2> 鍵盤教案</h2>
@@ -56,19 +56,19 @@
                     </h3>
                     <p> blablablalablablalablablalablablalablablalablabla</p>
                 </div>
-            </a href="#">
-            <a href="../Web_study/js_slither_game/index.html" class="item">
+            </article>
+            <article class="item">
                 <img src ="https://picsum.photos/300/300?random=2">
                 <div class="txt"> 
-                    <h2> 貪食蛇</h2>
+                    <h2> 滑鼠點擊教案</h2>
                     <h3> 
                         <i class="fa-solid fa-clock"></i>
                         2022/08/18
                     </h3>
                     <p> blablalablablalablablalablablalablablalablablalablablabla</p>
                 </div>
-            </a href="#">
-            <a href="#" class="item">
+            </article>
+            <article class="item">
                 <img src ="https://picsum.photos/300/300?random=3">
                 <div class="txt"> 
                     <h2> 滑鼠移動教案</h2>
@@ -78,8 +78,8 @@
                     </h3>
                     <p> blablablalablablalablablalablablalablablalablablalablabla</p>
                 </div>
-            </a href="#">
-            <a href="#" class="item">
+            </article>
+            <article class="item">
                 <img src ="https://picsum.photos/300/300?random=4">
                 <div class="txt"> 
                     <h2> 滑鼠移動教案</h2>
@@ -89,8 +89,8 @@
                     </h3>
                     <p> blablablalablablalablablalablablalablablalablablalablabla</p>
                 </div>
-            </a href="#">
-            <a href="#" class="item">
+            </article>
+            <article class="item">
                 <img src ="https://picsum.photos/300/300?random=5">
                 <div class="txt"> 
                     <h2> 滑鼠移動教案</h2>
@@ -100,8 +100,8 @@
                     </h3>
                     <p> blablablalablablalablablalablablalablablalablablalablabla</p>
                 </div>
-            </a href="#">
-            <a href="#" class="item">
+            </article>
+            <article class="item">
                 <img src ="https://picsum.photos/300/300?random=6">
                 <div class="txt"> 
                     <h2> 滑鼠移動教案</h2>
@@ -111,10 +111,9 @@
                     </h3>
                     <p> blablablalablablalablablalablablalablablalablablalablabla</p>
                 </div>
-            </a href="#">
+            </article>
         </section>
-        <div style="width:100%; height: 100px; position:absolute; bottom:0px; background: linear-gradient(to right, #F97794 0%, #623AA2 100%);">
-        </div>
+        <div style="width: 100%; height: 100px; background-color: salmon; "></div>
         <script src="script.js"></script>
     </body>
 </html>
