@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title> OowoO</title>
+        <!-- 引入外部 css 檔案-->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body style="height:1500px;">
+        <!-- color -->
+        <h1 style = "border:5px solid green">框線</h1>
+        <h1 style = "background-color:green">背景</h1>
+
+        <!-- padding 內側留白 & margin 外側留白-->
+        <div style="padding:20px ;border:5px solid red"> padding</div>
+        <div style="margin:40px ; border:5px solid red"> margin </div> 
+        
+        <!-- float & display-->
+        <img src="star.jpg" width = "200px" style="float:left;" />
+        <p> oefpewakpwfkpwopewa kpwfkpwopewakpwfkpwopewakpwfkp</p>
+
+        <!-- block inline-->
+        <p style="display:inline;">ㄎㄎㄎ</p>
+        <p style="display:inline;">wokfokq</p>
+        <span style="display:block;">ㄎㄎ</span>
+        <span style="display:block;">QQ</span>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- position 定位-->
+        <h1> css教學</h1>
+        <br>
+        <br>
+        <br>
+        <!-- fixed 固定定位(固定在頁面上某個位置)-->
+        <div style="position:fixed; right:40px ; bottom:40px; width:100px; height:100px; border:5px solid blueviolet;">
+            <div style="position:absolute; bottom:50px; "> 固定定位 </div>
+        </div>
+        <!-- relative 相對定位(會相對於自己的位置邊界而移動)-->
+        <!-- absolute 絕對定位(定位到目前相對定位邊界的地方)-->
+        <br>
+        <div style="position:relative; padding:30px; border:1px solid blueviolet;">
+            <div style="position:absolute; bottom:0px ; left: 0px;">絕對定位</div>
+            <div style="position:relative; padding:30px ;border:1px solid blueviolet;">
+                <div style="position:absolute; bottom:0px ; left: 0px;">絕對定位</div>
+            </div>
+        </div>
+        <br>
+
+        <!-- opacity 透明度 0~1 & border-radius 邊角圓弧-->
+        <div style="opacity:0.5; border-radius:20px; width:120px ; height:120px ; background-color: blue;  padding:5px">
+            <p> 圓弧 </p>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+        <!-- class & id-->
+        <div style=" padding:30px; border:5px solid sandybrown;">
+            <div class = "container">
+                <div class = "item">Item 1</div>
+                <div class = "item">Item 2</div>
+                <div class = "item">Item 3</div>
+                <div class = "item">Item 4</div>
+            </div>
+        </div>
+    </body>
+</html>

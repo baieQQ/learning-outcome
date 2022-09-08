@@ -1,0 +1,5 @@
+li.active{
+    color: black;
+    font-weight: 900;
+    border: 1px black solid;
+}

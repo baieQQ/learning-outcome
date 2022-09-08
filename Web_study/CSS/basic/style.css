@@ -1,0 +1,33 @@
+/* 自訂 style 標籤 */
+p{
+    /* 依序為顏色 大小 字形 粗細 行距*/
+    color:salmon;
+    font-size: 20pt;
+    font-family : "標楷體";
+    font-weight : bold;
+    line-height : 1.7;
+    background-color: bisque;
+    width:auto;
+    height:auto;
+}
+
+/* 自訂 class */
+.item{
+    background-color:black ;
+    color : wheat ;
+    margin : 15px ;
+    padding : 20px;
+    height: 50px;
+    width: 50px;
+    flex : 1;
+}
+
+.container{
+    display : flex ;
+    position: relative; 
+    /* 排列方向 */
+    flex-direction:row;
+    /* 換行設定 */
+    flex-wrap: wrap;
+}
+

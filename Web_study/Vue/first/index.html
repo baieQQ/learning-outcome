@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div id="app">
+            <h1>{{ message }}</h1>
+            <input type="text" v-model="message"/> 可以修改我哦，I am v-model
+            <br><br>
+            <input type="text" placeholder="來打你想輸入的東西吧" @keyup.enter="addList(newbullShit)" v-model="newbullShit">
+            <ul>
+                <li v-for="bullShit in bullShitList" v-bind:class="{active: bullShit.xddd }">
+                    <input type="checkbox" v-model="bullShit.xddd">
+                    {{ bullShit.content }}
+                    <button @click="removeList(bullShit)">刪除</button>
+                </li>
+            </ul>
+            {{ bullShitList }}
+            <br>
+            {{ whoTrue }}
+            <br>
+            <br>
+            <h1 v-if="isOwO"> I am v-if！owoowoowoowoowoowoowoowoowoowoowo</h1>
+            <h1 v-show="isOwO"> I am v-show！owoowoowoowoowoowoowoowoowoowoowo</h1>
+            <button @click="myList()"> 點我顯示 owo，I am v-on: & @ </button>
+            <h1 v-for="item in user"> I am v-for {{ item }}</h1>
+            <h1>貨幣轉換</h1>
+            <input type="text" v-model="moneyTW" placeholder="請輸入台幣">
+            <ul>
+                <li> 日幣 {{ moneyTW * 0.3}}</li>
+                <li> 美金 {{ moneyTW * 30}}</li>
+            </ul>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

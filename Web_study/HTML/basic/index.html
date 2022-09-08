@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="UTF-8"></meta>
+        <title>owowo</title>
+    </head>
+    <body>
+        <div>
+            <!-- 文字排版-->
+            <h1>文字排版</h1>
+            <h2>標題一 粗體</h1>
+            <p> <b>  is 粗體</b></p>
+            <h2>標題二 斜體</h1>
+            <p> <i> i is 斜體 </i></p>
+            <h2>標題三 換行</h1>
+            <br/>
+            <p> br is 換行</p>
+            <br/>
+            <h2>標題四 分隔線</h1>
+            <p> hr is 分隔線</p>
+            <hr/>
+            </div>
+        <!-- 連結 & 圖片-->
+        <!-- alt 是在無法連線時顯示的文字-->
+        <h1>連結與圖片</h1>
+        <p> href is 連結</p> 
+        <a href="" alt="YT 連結">youtube</a>
+        <a href="page2.html">第二頁</a>
+        <a href="dir/page3.html">第三頁</a>
+        <p> img src is 圖片</p>
+        <img src="star.jpg" width="200" height="200"/>
+        <br/>
+        <p> video is video src & controls</p>
+        <video src="Pexels.mp4" controls width="400" height="400">瀏覽器顆顆顆</video>
+        <br/>
+        <p>video Link is iframe</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CLUPkcLQm64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+        <hr/>
+
+        <!-- 列表 & 表格-->
+        <h1>列表 & 表<格</h1>
+        <ol type="A"> <!-- type = { 1 : 數字排序, a : 小寫字母排序, A : 大寫字母排序, i : 小寫羅馬字母排序, I : 大寫羅馬字母排序}--> 
+            <li> owo</li>
+            <li> ouo</li>
+            <li> oxo</li>
+            <li> ono</li>
+            <li> ooo</li>
+        </ol>
+        <hr/>
+        <table border="3" width="500" style="color:green"> 
+            <tr>
+                <th colspan = "3"> <!-- 向右合併儲存格-->
+                    標題:Wwwwww
+                </th>
+            </tr>
+            <tr>
+                <td style="color:red">日期</td>
+                <td>國文</td>
+                <td rowspan="2">數學</td> <!-- 向下合併儲存格-->
+            </tr>
+            <tr>
+                <td>08/02</td>
+                <td>90</td>
+            </tr>
+        </table>
+        <hr/>
+        <!-- <select> 下拉式選單 -->
+        血型 <select name="bloodtype">
+            <option value ="A">A</option>
+            <option value ="B">B</option>
+            <option value ="C">C</option>
+            <option value ="D">D</option>
+            <option value ="E">E</option>
+        </select>
+        <hr/>
+        <!-- type='checkbox' 多選題 -->
+        <input type="checkbox" name="color" value="blue">blue
+        <input type="checkbox" name="color" value="green">green
+        <input type="checkbox" name="color" value="red">red
+        <hr/>
+        <!-- type = 'radio' 單選題-->
+        <input type="radio" name="gender" value="男">男
+        <input type="radio" name="gender" value="女">女
+        <hr/>
+        <!-- type = 'text' 輸入-->
+        姓名：<input type="text" placeholder="請輸入名字">
+        <hr/>
+        <!-- <textarea> = 文字框-->
+        <textarea name = "message" placeholder = "輸入內容"></textarea>
+        <hr/>
+        <!-- type = 'submit' 送出按鈕-->
+        <input type="submit" value="submit">
+    </body>
+</html>
