@@ -37,28 +37,91 @@
     
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
+    // let ans = inventors.filter(inventor => {
+    //   return inventor.year >= 1500 && inventor.year < 1600;
+    // })
+    // console.table(ans);
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
+    // let ans = inventors.map(inventor => inventor.first + ', ' + inventor.last);
+    // console.log(ans);
+
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+    // let ans = inventors.sort((a , b) => {
+    //   return a.year - b.year; 
+    // })
+    // console.table(ans);
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
+    // let ans = 0;
+    // inventors.forEach(inventor => {
+    //   ans += inventor.passed - inventor.year;
+    // })
+    // console.log(ans);
+
+    // let ans = inventors.reduce((ans, inventor) =>{ // 累加器
+    //   return ans + inventor.passed - inventor.year;
+    // }, 0) // ans 初始值
+    // console.log(ans);
 
     // 5. Sort the inventors by years lived
+    // let ans = inventors.sort((a, b) =>{
+    //   return (a.passed - a.year) > (b.passed - b.year);
+    // })
+    // console.table(ans);
+
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+    // document.querySelector('mw-category-group ul li a')
+    // let ans = document.querySelectorAll('.mw-category-group ul li a')
+    // w = Array.apply(null, ans)
+    // ans = w.filter(ww =>{return ww.title.indexOf('de') !== -1})
+    // ans.forEach(i => { console.log(i.title)})
 
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+    // let newPeople = people.map(owo => {
+    //   return owo.split(', ');
+    // })
+    // console.table(newPeople);
+
+    // let ans = newPeople.sort((a, b) => {
+    //   return a[1] > b[1] ? 1 : -1;
+    // })
+    // console.table(ans);
+
+    // let ans = people.sort((a, b) => {
+    //   let [aFirst, aLast] = a.split(', ');
+    //   let [bFirst, bLast] = b.split(', ');
+    //   return aLast > bLast ? 1 : -1;
+    // })
+    // console.table(ans);
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    // let ans = [];
+    // data.forEach(inventor => {
+    //   if(ans[inventor])
+    //     ans[inventor] += 1;
+    //   else{
+    //     ans[inventor] = 1;
+    //   }
+    // })
+    // console.table(ans);
+
+    // let ans = data.reduce((obj, content) =>{
+    //   if(!obj[content]) obj[content] = 1;
+    //   else obj[content] += 1;
+    //   return obj;
+    // }, {})
+    // console.table(ans);
 
   </script>
 </body>
