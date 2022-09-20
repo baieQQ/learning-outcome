@@ -116,12 +116,12 @@
     // })
     // console.table(ans);
 
-    // let ans = data.reduce((obj, content) =>{
-    //   if(!obj[content]) obj[content] = 1;
-    //   else obj[content] += 1;
-    //   return obj;
-    // }, {})
-    // console.table(ans);
+    let ans = data.reduce((obj, content) =>{
+      if(!obj[content]) obj[content] = 1;
+      else obj[content] += 1;
+      return obj;
+    }, {})
+    console.table(ans);
 
   </script>
 </body>

@@ -61,7 +61,7 @@
 
 
 function playSound(e){
-  // console.log(e); // 由此知道 e 代表的 keyboardEvent 的內容，本次會取 keyCode 做主要利用
+  console.log(e); // 由此知道 e 代表的 keyboardEvent 的內容，本次會取 keyCode 做主要利用
   
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`); // 依照所按下的按鍵，選取對應的音檔
   // console.log(audio);
